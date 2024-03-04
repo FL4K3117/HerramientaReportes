@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.savadr.HerramientaFX8.Controlador.EstadisticasController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <SplitPane dividerPositions="0.3963210702341137" layoutX="460.0" layoutY="150.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="1078.0" styleClass="upper-form" stylesheets="@estadisticas.css">
+                     <children>
+                        <TableView fx:id="tabEstadisticaArt" layoutX="14.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" styleClass="tbView-form" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <columns>
+                              <TableColumn fx:id="tcTipo" editable="false" prefWidth="127.0" resizable="false" text="TIPO" />
+                              <TableColumn fx:id="nMes1" editable="false" prefWidth="110.0" resizable="false" text="MES1/6" />
+                              <TableColumn fx:id="nMes2" editable="false" prefWidth="110.0" resizable="false" text="MES2/6" />
+                              <TableColumn fx:id="nMes3" editable="false" prefWidth="110.0" resizable="false" text="MES3/6" />
+                              <TableColumn fx:id="nMes4" editable="false" prefWidth="110.0" resizable="false" text="MES4/6" />
+                              <TableColumn fx:id="nMes5" editable="false" prefWidth="110.0" resizable="false" text="MES5/6" />
+                              <TableColumn fx:id="nMes6" editable="false" prefWidth="110.0" resizable="false" text="MES6/6" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="296.0" prefWidth="1078.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5870786516853933" layoutX="459.0" layoutY="65.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="178.0" prefWidth="1076.0" styleClass="middle-form" stylesheets="@estadisticas.css">
+                                 <children>
+                                    <TableView fx:id="tabDetallePed" layoutX="176.0" layoutY="-5.0" prefHeight="200.0" prefWidth="200.0" styleClass="tbView-form" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                       <columns>
+                                          <TableColumn fx:id="tcGrupo" editable="false" prefWidth="85.0" resizable="false" text="GRUPO" />
+                                          <TableColumn fx:id="tcArticulo" editable="false" prefWidth="100.0" resizable="false" text="ARTICULO" />
+                                          <TableColumn fx:id="tcDescripcion" editable="false" prefWidth="300.0" resizable="false" text="DESCRIPCION" />
+                                          <TableColumn fx:id="tcCantidad" editable="false" prefWidth="100.0" resizable="false" text="CANTIDAD" />
+                                          <TableColumn fx:id="tcMax" editable="false" prefWidth="100.0" resizable="false" text="MAXIMOS" />
+                                          <TableColumn fx:id="tcMin" editable="false" prefWidth="100.0" resizable="false" text="MINIMOS" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="796.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.5" layoutX="298.0" layoutY="-15.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <items>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="128.0" prefWidth="452.0" styleClass="filters-form" stylesheets="@estadisticas.css">
+                                             <children>
+                                                <CheckBox fx:id="cbxArticulo" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Filtrado por articulo :" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                                                <CheckBox fx:id="cbxGrupo" layoutX="184.0" layoutY="76.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="73.0" text="Grupo" textFill="WHITE" AnchorPane.leftAnchor="180.0" />
+                                                <TextField fx:id="txtArticulo" layoutX="184.0" layoutY="20.0" prefHeight="25.0" prefWidth="193.0" promptText="Articulo" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                                                <TextField fx:id="txtGrupo" layoutX="184.0" layoutY="102.0" prefHeight="25.0" prefWidth="73.0" promptText="..." AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="180.0" />
+                                                <CheckBox fx:id="cbxCantidad" layoutX="279.0" layoutY="85.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="94.0" text="Incluir cantidad &quot;0&quot;" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="85.0" />
+                                                <CheckBox fx:id="cbxSucursales" layoutX="14.0" layoutY="76.0" mnemonicParsing="false" text="Sucursales" textFill="WHITE" AnchorPane.leftAnchor="15.0" />
+                                                <ComboBox fx:id="cbbSucursales" layoutX="14.0" layoutY="101.0" prefHeight="26.0" prefWidth="132.0" promptText="..." AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+                                                   <effect>
+                                                      <ColorAdjust brightness="1.0" />
+                                                   </effect></ComboBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="filters-form" stylesheets="@estadisticas.css">
+                                             <children>
+                                                <TextField fx:id="txtFolioPed" layoutX="14.0" layoutY="103.0" promptText="Folio" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="180.0" />
+                                                <Button fx:id="btnConsultaPed" contentDisplay="TOP" layoutX="245.0" layoutY="47.0" mnemonicParsing="false" onAction="#showQuerys" prefHeight="44.0" prefWidth="80.0" text="Consultar" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="15.0">
+                                                   <styleClass>
+                                                      <String fx:value="btn" />
+                                                      <String fx:value="btn-effect" />
+                                                   </styleClass>
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@Images/busqueda-de-datos.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button fx:id="btnLimpiar" contentDisplay="TOP" layoutX="244.0" layoutY="17.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="80.0" text="Limpiar" textFill="WHITE" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+                                                   <styleClass>
+                                                      <String fx:value="btn" />
+                                                      <String fx:value="btn-effect" />
+                                                   </styleClass>
+                                                   <graphic>
+                                                      <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@Images/cepillo.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Separator layoutX="241.0" layoutY="-36.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="0.0" />
+                                                <CheckBox fx:id="cbxFol" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Filtrado por folio:" textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+                                                <ComboBox fx:id="cbbType" layoutX="14.0" layoutY="58.0" prefHeight="26.0" prefWidth="149.0" promptText="Seleccione tipo" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="180.0">
+                                                   <effect>
+                                                      <ColorAdjust brightness="1.0" />
+                                                   </effect>
+                                                </ComboBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-60.0" layoutY="-77.0" prefHeight="50.0" prefWidth="800.0" styleClass="banner-top-form" stylesheets="@estadisticas.css" AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="313.0" layoutY="10.0" text="ESTADISTICA" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSalir" layoutX="676.0" layoutY="6.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" text="SALIR" textFill="WHITE" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="674.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <styleClass>
+                  <String fx:value="btnBanner-effect" />
+                  <String fx:value="btnBanner-form" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/icons8-atrás-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

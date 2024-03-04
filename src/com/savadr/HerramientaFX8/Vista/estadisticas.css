@@ -1,0 +1,66 @@
+.banner-top-form{
+    -fx-background-color: radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 48.3425% 50.0%, radius 50.0%, #2ca772 0.0%, #155b29 100.0%);
+    -fx-border-color:#155b29;
+    -fx-border-width:2px 2px 2px 2px;
+}
+
+.btnBanner-form{
+    -fx-background-color:transparent;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-background-radius:5px;
+}
+
+.btnBanner-effect:hover{
+    -fx-border-color: #1f2853;
+    -fx-border-width:0px 0px 0px 3px;
+    -fx-background-color: #2ca772;
+}
+
+.upper-form{
+    -fx-background-color:linear-gradient(to bottom right, #2ca772, #155b29);
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+
+.middle-form{
+    -fx-background-color:linear-gradient(to bottom right, #2ca772, #155b29);
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .4px 0px;
+}
+
+.filters-form{
+    -fx-background-color: linear-gradient(to bottom right, #2ca772, #155b29);
+}
+
+.tbView-form{
+    -fx-background-radius:5px;
+    -fx-border-color: linear-gradient(to bottom right, #155b29, #2ca772);
+    -fx-border-radius : 5px;
+}
+
+.btn{
+    -fx-background-color:transparent;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-background-radius:5px;
+}
+
+.btn-effect:hover{
+    -fx-border-color: WHITE;
+    -fx-border-width:0px 0px 3px 0px;
+    -fx-background-color: #2ca772;
+}
+
+.combo-box:hover{
+    -fx-border-color: WHITE;
+    -fx-border-width:0px 0px 3px 0px;
+}
+
+.combo-box{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-size:14px;
+    -fx-background-radius:5px;
+    -fx-font-family:"Arial";
+}

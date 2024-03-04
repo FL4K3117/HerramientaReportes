@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="HerramientaFX8">
+    <output-path>$PROJECT_DIR$/out/artifacts/HerramientaFX8</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.savadr.HerramientaFX8.App" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="HerramientaFX8.jar">
+        <element id="module-output" name="HerramientaFX8" />
+        <element id="directory" name="Lib">
+          <element id="library" level="project" name="DynamicReports 6.12" />
+          <element id="library" level="project" name="jaxb-runtime-2.3.3" />
+          <element id="library" level="project" name="log4j-api-2.21.1" />
+          <element id="library" level="project" name="log4j-core-2.21.1" />
+          <element id="library" level="project" name="mysql-connector-j-8.2.0" />
+          <element id="library" level="project" name="Poi Apache" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

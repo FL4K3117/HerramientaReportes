@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.savadr.HerramientaFX8.Controlador.MenuPrincipalController">
+   <children>
+      <BorderPane layoutX="159.0" layoutY="34.0" prefHeight="500.0" prefWidth="1080.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="67.0" prefWidth="1080.0" styleClass="banner-form" stylesheets="@menuprincipal.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="134.0" layoutY="26.0" prefHeight="25.0" prefWidth="200.0" styleClass="banner-top-form" stylesheets="@menuprincipal.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="486.0" layoutY="5.0" text="INICIO" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox alignment="TOP_RIGHT" layoutX="112.0" layoutY="25.0" prefHeight="40.0" prefWidth="896.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Button fx:id="btnStatistics" mnemonicParsing="false" onMouseClicked="#MostrarEstadisticas" prefHeight="38.0" prefWidth="145.0" stylesheets="@menuprincipal.css" text="ESTADISTICAS">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/estadistica.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="buttons-bTop-form" />
+                              <String fx:value="menuItem" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="btnBack" mnemonicParsing="false" prefHeight="38.0" prefWidth="145.0" stylesheets="@menuprincipal.css" text="SALIR" textFill="#0b0b36">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/icons8-atrás-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="buttons-bTop-form" />
+                              <String fx:value="menuItem" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lblInfo" layoutX="4.0" layoutY="29.0" prefHeight="34.0" prefWidth="115.0" text="INFORMES" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="965.0" AnchorPane.topAnchor="25.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lblInfoClose" layoutX="4.0" layoutY="29.0" prefHeight="34.0" prefWidth="115.0" styleClass="menuItem-Infor" stylesheets="@menuprincipal.css" text="INFORMES" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="965.0" AnchorPane.topAnchor="25.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="433.0" prefWidth="115.0" styleClass="slider-form" stylesheets="@menuprincipal.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="slider" prefHeight="433.0" prefWidth="115.0" styleClass="slider-form" stylesheets="@menuprincipal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox prefHeight="433.0" prefWidth="114.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <GridPane prefHeight="433.0" prefWidth="115.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="btnStock" mnemonicParsing="false" onMouseClicked="#MostrarExistencias" prefHeight="73.0" prefWidth="114.0" stylesheets="@menuprincipal.css" text="Existencias" textFill="WHITE" wrapText="true">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Images/existencias.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="buttons-sBar-form" />
+                                          <String fx:value="slideBaritem" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button fx:id="btnHistory" mnemonicParsing="false" onMouseClicked="#MostrarHistPre" prefHeight="73.0" prefWidth="114.0" text="Historico Precios" textFill="WHITE" wrapText="true" GridPane.rowIndex="1">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Images/tiempo.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="buttons-sBar-form" />
+                                          <String fx:value="slideBaritem" />
+                                       </styleClass>
+                                    </Button>
+                                    <Button fx:id="btnUnitSold" mnemonicParsing="false" onMouseClicked="#MostrarUnidVend" prefHeight="73.0" prefWidth="114.0" text="Unidades Vendidas" textFill="WHITE" wrapText="true" GridPane.rowIndex="2">
+                                       <graphic>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Images/dinero.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="buttons-sBar-form" />
+                                          <String fx:value="slideBaritem" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="content" prefHeight="433.0" prefWidth="965.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="182.0" fitWidth="680.0" layoutX="143.0" layoutY="126.0" pickOnBounds="true" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="142.0" AnchorPane.topAnchor="126.0">
+                     <image>
+                        <Image url="@Images/logoComb.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

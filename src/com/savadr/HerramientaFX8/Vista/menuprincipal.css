@@ -1,0 +1,42 @@
+.slider-form{
+    -fx-background-color:linear-gradient(to bottom right, #2ca772, #155b29);
+    -fx-border-color:#000;
+    -fx-border-width:.4px 0px .4px .4px;
+}
+
+.banner-form{
+    -fx-border-color:#155b29;
+    -fx-border-width:2px 2px 2px 2px;
+}
+
+.banner-top-form{
+    -fx-background-color:linear-gradient(to bottom right, #2ca772, #155b29);
+    -fx-border-color:#155b29;
+    -fx-border-width:2px 2px 2px 2px;
+}
+
+.buttons-bTop-form{
+    -fx-background-color: transparent;
+}
+
+.menuItem:hover{
+    -fx-border-color: #1f2853;
+    -fx-border-width:0px 3px 0px 3px;
+    -fx-background-color: #2ca772;
+}
+
+.menuItem-Infor:hover{
+    -fx-border-color: #1f2853;
+    -fx-border-width:0px 3px 0px 0px;
+    -fx-background-color: #2ca772;
+}
+
+.slideBaritem:hover{
+    -fx-background-color: #2ca772;
+    -fx-border-color: #1f2853;
+    -fx-border-width: 0px 3px 0px 3px;;        
+}
+
+.buttons-sBar-form{
+    -fx-background-color: transparent;
+}
